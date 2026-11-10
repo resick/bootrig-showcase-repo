@@ -1,26 +1,21 @@
 # Bootrig
 
-Sets up a new Windows PC with one download instead of installing every app by hand.
+Bootrig sets up a new Windows PC from one download, so you don't have to install every app by hand.
 Live site: https://bootrig.com
 
 ## How it works
-- Pick apps on the website (300+ available).
-- Download a small installer written in C# on .NET Framework 4.8,
-  which is already on every Windows 10/11 PC.
-- The installer fetches a digitally signed install plan and checks the signature
-  before doing anything. A tampered plan is refused.
-- Apps are installed through WinGet, straight from each publisher. WinGet checks
-  every file against its SHA-256 hash, so a swapped file won't install.
-- Installs run silently: one admin (UAC) prompt, no wizards, apps you already
-  have are skipped.
+- You pick your apps on the website. There are over 300 to choose from.
+- You download a small installer written in C# on .NET Framework 4.8, which every Windows 10/11 PC already has.
+- Before it does anything, the installer downloads a digitally signed install plan and checks the signature. If someone tampered with the plan, it stops.
+- The apps come through WinGet, straight from each publisher. WinGet checks every file against its SHA-256 hash, so a swapped file won't install.
+- You get one admin (UAC) prompt, then everything installs in the background. Apps you already have get skipped.
 
 ## For IT teams (in development)
-Central web console, app baselines per team, automatic app updates on managed PCs,
-role-based access and audit log, rollout via Intune, Group Policy or RMM.
+The team version adds a web console where admins set an app baseline for each team. Managed PCs get app updates automatically on a schedule. It also has role-based access and an audit log, and you roll it out through Intune, Group Policy or an RMM tool.
 
 ## Screenshots
 ![Bootrig main page](mainpage.png)
 ![Bootrig screenshot 2](2026-11-10%2023_45_35-Steam.png)
 ![Bootrig screenshot 3](2026-11-10%2023_45_51-Steam.png)
 
-The source code is private. Happy to walk through it in an interview.
+The source code is private, but I can show you how it works in an interview.
