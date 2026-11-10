@@ -19,9 +19,8 @@ Central web console, app baselines per team, automatic app updates on managed PC
 role-based access and audit log, rollout via Intune, Group Policy or RMM.
 
 ## Screenshots
-![Bootrig start page](2026-11-10%2023_45_35-Steam.png)
-![Bootrig screenshot 2](2026-11-10%2023_45_43-Steam.png)
+![Bootrig main page](mainpage.png)
+![Bootrig screenshot 2](2026-11-10%2023_45_35-Steam.png)
 ![Bootrig screenshot 3](2026-11-10%2023_45_51-Steam.png)
-![Bootrig screenshot 4](2026-11-10%2023_46_03-Steam.png)
 
 The source code is private. Happy to walk through it in an interview.
